@@ -12,203 +12,90 @@
     <div class="container mx-auto">
       <div class="bg-white py-12">
         <div class="px-4 sm:px-6 lg:px-8">
-          <div class="">
-            <div class="">
-              <span class="text-2xl mt-4 font-bold">Summary</span>
-              <div class="">
-                <ui class="list-outside p-4 text-xl list-disc">
-                  <li class="">
-                    <span>
-                      This program is a system that analyzes computed tomography
-                      (CT) taken by a patient for lung cancer diagnosis with
-                      artificial intelligence. First, artificial intelligence
-                      analyzes, and analysis experts mark the unanalyzed parts
-                      again. Also, this marked part is applied to the system
-                      that allows artificial intelligence to learn again.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      The frontend developer develops the UI so that the lung
-                      cancer analysis expert can easily understand the results
-                      of the artificial intelligence analysis, In addition, the
-                      developer developed a function that allows analysis
-                      experts to easily mark the parts that have not been
-                      analyzed with artificial intelligence. CT for analysis can
-                      be analyzed by reading PACS (picture archiving and
-                      communication system) information collected at a hospital,
-                      or by uploading CT data collected by an analyst or a
-                      doctor.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      The core UI of this program was developed by combining the
-                      library of cornerstone and cornerstone-tools with Angular
-                      Framework.
-                    </span>
-                  </li>
-                </ui>
-              </div>
-            </div>
-            <hr class="my-8 h-px bg-gray-400 border-0 dark:bg-gray-700" />
-            <div
-              class="text-left w-full h-72 mt-4 max-w-2x1 text-xl text-gray-800"
-            >
-              <span class="text-2xl mt-4 font-bold">Demonstration</span>
-              <div class="mt-4">
-                <video class="h-72" controls="">
-                  <source
-                    src="https://wsjung0516.s3.us-west-1.amazonaws.com/homepage/monitor_bandicam+2022-11-08.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-            </div>
-            <hr class="mt-24 my-8 h-px bg-gray-400 border-0 dark:bg-gray-700" />
+          <p class="text-2xl mb-1.5">2. Ordering Pizza </p>
 
-            <div class="mt-10">
-              <span class="text-2xl mt-4 font-bold"
-                >Development Environment</span
-              >
-              <div
-                class="text-left ml-2 font-bold leading-8 tracking-tight text-gray-900"
-              >
-                <p class="text-xl mt-2 text-blue-600">Frontend</p>
-                <ul class="text-left ml-8 list-decimal">
-                  <li>Angular: 12.1.3</li>
-                  <li>RxJS: 6.3.3</li>
-                  <li>NgXS: 3.6.1</li>
-                  <li>cornerstone-core: 2.2.8</li>
-                  <li>cornerstone-tools: 5.1.3</li>
-                  <li>cornerstone-wado-image-loader: 3.3.1</li>
-                  <li>dicom-parser: 1.8.7</li>
-                </ul>
-                <p class="text-xl mt-2 text-blue-600">Backend</p>
-                <ul class="text-left ml-8 list-decimal">
-                  <li>Nestjs: 7.6.13</li>
-                  <li>RxJS: 6.6.6</li>
-                  <li>Prisma: 2.21.2</li>
-                </ul>
-              </div>
-            </div>
-            <hr class="my-8 h-px bg-gray-400 border-0 dark:bg-gray-700" />
-            <div class="mt-10">
-              <span class="text-2xl mt-4 font-bold">My Role</span>
-              <p class="text-xl mt-2 font-bold">State of program</p>
-              <div class="">
-                <p class="text-xl mt-2 text-blue-600">Frontend</p>
-                <ui class="list-outside p-4 text-xl list-disc">
-                  <li class="">
-                    <span>
-                      At the time of joining the company in Dec 2019, there were
-                      two developers. One is the frontend and the other is the
-                      backend developer, and there was a program developed by
-                      the backend developer using Angular. At that time, the
-                      frontend developer had a new employee who had studied
-                      Angular for about 3 months. When I joined the development
-                      team after joining the company, the program developed by
-                      the backend developer was running. However, since the
-                      program was not modularized, it was not possible to add
-                      functions to the program or to modify the existing ones.
-                      It is a program developed with Angular 7.0, but the
-                      program is not modularized, and the files are main.ts 1
-                      file 9,900 lines, main.html 1 file 5,500 lines, main.css 1
-                      file 3,500 lines, it was a program made of 3 files.
-                      However, since this program was developed including the
-                      cornerstone-core and cornerstone-tools libraries that
-                      process medical images, the basic functions of image
-                      processing were expressed to some extent. The problem,
-                      however, was that it could no longer be maintained. And,
-                      they were too slow to display images, so they had no
-                      commercial value.
-                    </span>
-                  </li>
-                </ui>
-              </div>
-              <div class="">
-                <p class="text-xl mt-2 text-blue-600">Backend</p>
-                <ui class="list-outside p-4 text-xl list-disc">
-                  <li class="">
-                    <span>
-                      Backend was simply developed with nodejs and express, but
-                      in the initial version, there were no basic functions such
-                      as pagination. Of course, since it could not work properly
-                      in the Frontend, the upgrade of the function in the
-                      Backend had not been carried out yet.
-                    </span>
-                  </li>
-                </ui>
-              </div>
-              <p class="text-xl mt-2 font-bold">Work of developing</p>
-              <div class="">
-                <p class="text-xl mt-2 text-blue-600">Frontend</p>
-                <ui class="list-outside p-4 text-xl list-disc">
-                  <li class="">
-                    <span>
-                      I developed additional functions while understanding the
-                      existing program at first. At this time, I trained an
-                      existing Frontend developer about 30 to 60 minutes of
-                      Angular every day for a year. It took me about 4 months to
-                      understand the program. So, after understanding to some
-                      extent, I proceeded to separate the program into each
-                      module that composes the module. We tried to make the
-                      modules as small as possible because we had to re-develop
-                      with maintenance and function additions in mind in the
-                      future. In order to reinforce the late image expression,
-                      Angular technology was applied and optimized.<br />
-                      It takes about 9 months.
-                    </span>
-                  </li>
-                </ui>
-              </div>
-              <div class="">
-                <p class="text-xl mt-2 text-blue-600">Backend</p>
-                <ui class="list-outside p-4 text-xl list-disc">
-                  <li class="">
-                    <span>
-                      Once the functions of the frontend have progressed to some
-                      extent, the main program was re-developed by applying
-                      nestjs, prisma, etc. to the program of the backend. It
-                      also added features such as pagenation.<br />
-                      It takes about 3 months.
-                    </span>
-                  </li>
-                </ui>
-              </div>
-            </div>
-            <hr class="my-8 h-px bg-gray-400 border-0 dark:bg-gray-700" />
-
-            <div class="mt-20">
-              <span class="text-2xl mt-4 font-bold">System Structure</span>
-              <div
-                class="text-left ml-2 font-bold leading-8 tracking-tight text-gray-900"
-              >
-                <img src="assets/images/monitor-structure.png" />
-              </div>
-            </div>
-            <hr class="my-8 h-px bg-gray-400 border-0 dark:bg-gray-700" />
-
-            <div class="mt-4">
-              <!-- <span class="text-2xl mt-4 font-bold">Additional information</span> -->
-              <div class="text-left ml-2">
-                <p>
-                  The added content is a description of the important module
-                  that was written during the project. Translation into English
-                  was not possible due to time reasons. <br/>
-                  Added for reference only.
-                </p>
-                <div class="">
-                  <p class="mt-2">
-                    <a href="https://wsjung0516.github.io/monitor_md/"><span class="text-blue-300">Details</span>
-                      </a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div>
+            <video class="h-72" controls="">
+              <source
+                src="https://wsjung0516.s3.us-west-1.amazonaws.com/homepage/pizza_order_bandicam+2022-10-17.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
-        </div>
+          <hr>
+          <p>Pizza order program</p>
+          <p>Demo. program : <a class="text-blue-700" href="https://wsjung0516.github.io/pizza-order220304/">Demo</a></p>
+          <p>Program source : <a class="text-blue-700" href="https://github.com/wsjung0516/pizza-order220304">Source</a></p>
+          <p>--------------------------------</p>
+          <div>
+            <p class="text-blue-700">Cypress e2e test</p>
+            <p>The Cypress test program was originally so fast that it was difficult to read. So, I set the execution time of all commands to delay 500ms.</p>
+            <p>--------------------------------</p>
+            <video class="h-72" controls="">
+              <source
+                src="https://wsjung0516.s3.us-west-1.amazonaws.com/homepage/make-new-pizza.cy.ts.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <p class="text-xl mt-8">Summary
+          <p>
+          <ol class="list-disc ml-6">
+            <li>In this program, part of the original image is referenced in another Article,
+              Sample program developed with Angular: (Angular source: https://github.com/cypress-io/angular-pizza-creator).</li>
+            <li>A program that stopped while trying to develop by combining Redux (NgXS) and RxJS:
+              (<a href="https://github.com/tommythongnguyen/Ngxs-Pizza-Order">https://github.com/tommythongnguyen/Ngxs-Pizza-Order</a>)
+            </li>
+            <li>
+              This program has been reinforcing and revising the overall function, such as correcting and completing important parts and adding/deleting toppings.
+              Originally, it works by being connected to the DB, but it operates instead as a Redux function for online demonstration.
+              <br/> The source of the program can be easily grasped systematically and is easily maintained.
+            </li>
+            <p class="mt-1.5 mb-1.5">Menu description
+              - Check the description with the Help button in the program<br/>
+            </p>
+          </ol>
+          <p class="text-xl mt-8">Applied technology</p>
+          <ol class="list-disc ml-6">
+            <li>NgXS: (Redux for Angular) : Apply Redux to change the state of each module of the program in one place
+              Because it is managed, it is easy to manage the status, and it is easy to expand functions and maintain maintenance.
+            </li>
+            <li> Angular Material : Basic components (button, input, card, etc.) and table are applied</li>
+            <li> Angular Cdk : Implementation of expressing selected toppings with Angular Cdk Overlay technology.
+              &nbsp;&nbsp;As an overlay function, Data can be expressed without affecting the data in the background.
+            </li>
+            <li> Storybook: ver 6.4.9: Design UI</li>
+            <li> Tailwindcss: ver 2.2.19: Apply css continuously</li>
+            <li> RxJS : All major functions of the program are applied RxJS to improve productivity and maintainability.</li>
+            <li> Angular Animation : Toppings on pizza dough by applying Angular Animation function
+              improve the implementation vividly. (The content that was implemented in the original version)
+            </li>
+      
+          </ol>
+          <br/>
+          <p class="text-xl mt-8">Basic structure</p>
+          <div class="mt-4">
+            <img src="assets/images/pizza-structure.png" width="500"/>
+          </div>
+          <ol class="list-decimal ml-6 mt-3">
+            <p>Below seq. no is related with above diagram.</p>
+            <li>Main screen, Program to display made pizzas</li>
+            <li>Structure for each pizza</li>
+            <li>Programs related to pizza toppings</li>
+            <li>A program that selects pizza toppings and displays the overlay process for the selected toppings</li>
+          </ol>
+      
+          <p class="text-xl mt-5">Description of Program Source</p>
+          <ol class="list-disc ml-6">
+            <li>pizza-display ; A component that animates toppings on pizza dough.</li>
+            <li>pizza-form: A component that creates, adds, or deletes pizzas, or selects and saves toppings.</li>
+            <li>pizza-item: A component that displays pizza on the dashboard (home menu).</li>
+            <li>pizza-toppings: Ability to choose toppings for pizza. Delivers the selected result to pizza-form component</li>
+            <li>Selected-item: A component that displays the selected topping and calculates a price
+              that fluctuates whenever a topping is added or removed.</li>
+            <li>product-item.componet: Components that display separately if you select a pizza listed on the dashboard.</li>
+            <li>product.component: The part that lists the created pizza on the dashboard (home menu)</li>
+          </ol>        </div>
       </div>
     </div>
     <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
