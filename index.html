@@ -17,91 +17,54 @@
           <div>
             <video class="h-72" controls="">
               <source
-                src="https://wsjung0516.s3.us-west-1.amazonaws.com/homepage/pizza_order_bandicam+2022-10-17.mp4"
+                src="https://wsjung0516.s3.us-west-1.amazonaws.com/homepage/pizza-order-2023-07-27.mp4"
                 type="video/mp4"
               />
             </video>
           </div>
           <hr>
           <p>Pizza order program</p>
-          <p>Demo. program : <a class="text-blue-700" href="https://wsjung0516.github.io/pizza-order220304/">Demo</a></p>
-          <p>Program source : <a class="text-blue-700" href="https://github.com/wsjung0516/pizza-order220304">Source</a></p>
-          <hr class="my-8 h-px bg-gray-400 border-0 dark:bg-gray-700" />
-          <div>
-            <p class="text-xl text-blue-700">Cypress e2e test</p>
-            <p class="text-xl">The Cypress test program was originally so fast that it was difficult to read. So, I set the execution time of all commands to delay 500ms.</p>
-            <p>--------------------------------</p>
-            <video class="h-72" controls="">
-              <source
-                src="https://wsjung0516.s3.us-west-1.amazonaws.com/homepage/make-new-pizza.cy.ts.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
+          <p>Demo. program : <a class="text-blue-700" href="https://wsjung0516.github.io/pizza-order-230725/">Demo</a></p>
+          <p>Program source : <a class="text-blue-700" href="https://github.com/wsjung0516/pizza-order-230725">Source</a></p>
           <hr class="my-8 h-px bg-gray-400 border-0 dark:bg-gray-700" />
           <p class="text-2xl mt-8">Summary
           <p>
             <br/>
-          <ol class="text-xl list-disc ml-6">
-            <li>In this program, part of the original image is referenced in another Article,
-              Sample program developed with Angular: (Angular source: https://github.com/cypress-io/angular-pizza-creator).</li>
-            <li>A program that stopped while trying to develop by combining Redux (NgXS) and RxJS:
-              (<a href="https://github.com/tommythongnguyen/Ngxs-Pizza-Order">https://github.com/tommythongnguyen/Ngxs-Pizza-Order</a>)
+          <ul class="text-xl list-decimal ml-6">
+            <li>The image and animation program used in this project were referenced from other sites. (Angular source: https://github.com/cypress-io/angular-pizza-creator)</li>
+            <li>This program was originally developed using RxJS and NgXS (a state management program) but was redeveloped using Angular Signal recently.
             </li>
             <li>
-              This program has been reinforcing and revising the overall function, such as correcting and completing important parts and adding/deleting toppings.
-              Originally, it works by being connected to the DB, but it operates instead as a Redux function for online demonstration.
-              <br/> The source of the program can be easily grasped systematically and is easily maintained.
+              Unable to connect to the database, I applied the storage of Pizza Data to local storage.
             </li>
-            <p class="mt-1.5 mb-1.5">Menu description
-              - Check the description with the Help button in the program<br/>
-            </p>
-          </ol>
+          </ul>
           <hr class="my-8 h-px bg-gray-400 border-0 dark:bg-gray-700" />
           <p class="text-2xl mt-8">Applied technology</p>
           <br/>
-          <ol class="text-xl list-disc ml-6">
-            <li>NgXS: (Redux for Angular) : Apply Redux to change the state of each module of the program in one place
-              Because it is managed, it is easy to manage the status, and it is easy to expand functions and maintain maintenance.
+          <ul class="text-xl list-decimal ml-6">
+            <li>Angular: 16.1.4
             </li>
-            <li> Angular Material : Basic components (button, input, card, etc.) and table are applied</li>
-            <li> Angular Cdk : Implementation of expressing selected toppings with Angular Cdk Overlay technology.
-              &nbsp;&nbsp;As an overlay function, Data can be expressed without affecting the data in the background.
-            </li>
-            <li> Storybook: ver 6.4.9: Design UI</li>
-            <li> Tailwindcss: ver 2.2.19: Apply css continuously</li>
-            <li> RxJS : All major functions of the program are applied RxJS to improve productivity and maintainability.</li>
-            <li> Angular Animation : Toppings on pizza dough by applying Angular Animation function
-              improve the implementation vividly. (The content that was implemented in the original version)
-            </li>
-      
-          </ol>
+            <li> Signal</li>
+            <li> RxJS: 7.8.0</li>
+            <li> Tailwind: 3.3.0</li>
+          </ul>
           <hr class="my-8 h-px bg-gray-400 border-0 dark:bg-gray-700" />
           <p class="text-2xl mt-8">Basic structure</p>
           <div class="mt-4">
-            <img src="assets/images/pizza-structure.png" width="500"/>
+            <img src="assets/images/pizza-order2.png" width="500"/>
           </div>
-          <ol class="list-decimal ml-6 mt-3">
-            <p>Below seq. no is related with above diagram.</p>
-            <br/>
-            <li>Main screen, Program to display made pizzas</li>
-            <li>Structure for each pizza</li>
-            <li>Programs related to pizza toppings</li>
-            <li>A program that selects pizza toppings and displays the overlay process for the selected toppings</li>
-          </ol>
+ 
           <hr class="my-8 h-px bg-gray-400 border-0 dark:bg-gray-700" />
           <p class="text-2xl mt-5">Description of Program Source</p>
           <br/>
-          <ol class="text-xl list-disc ml-6">
-            <li>pizza-display ; A component that animates toppings on pizza dough.</li>
-            <li>pizza-form: A component that creates, adds, or deletes pizzas, or selects and saves toppings.</li>
-            <li>pizza-item: A component that displays pizza on the dashboard (home menu).</li>
-            <li>pizza-toppings: Ability to choose toppings for pizza. Delivers the selected result to pizza-form component</li>
-            <li>Selected-item: A component that displays the selected topping and calculates a price
-              that fluctuates whenever a topping is added or removed.</li>
-            <li>product-item.componet: Components that display separately if you select a pizza listed on the dashboard.</li>
-            <li>product.component: The part that lists the created pizza on the dashboard (home menu)</li>
-          </ol>        </div>
+          <ol class="text-xl list-decimal ml-6">
+            <li>toppings.component.ts: The images were composed in SVG format, and since one type of topping can be applied multiple times, each image was arranged into five sets to distribute the toppings evenly on the dough. When a topping is selected, it is saved in a separate array. The order of storage is determined so that toppings added later are placed on top of those already placed. </li>
+            <li>pizza.component.ts: This component places the selected toppings onto the dough.</li>
+            <li>pizza-order.component.ts: This component is responsible for registering or modifying the pizza.</li>
+            <li>pizza-order-list.component.ts: This component displays the newly created pizzas in a list, and when one is selected, it enters modification mode.</li>
+            <li>home.component.ts: This component includes pizza-order.component.ts and pizza-order-list.component.ts.</li>
+          </ol>
+        </div>
       </div>
     </div>
     <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
